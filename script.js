@@ -7,8 +7,9 @@ const multiplicationIndex = [
       for (let j = 1; j <= 20; j++) {
         let cell = document.createElement("td");
         let result = i * j;
-        cell.textContent = (`${i} x ${j} = ${result}`);    
+        cell.textContent = (`${j} x ${i} = ${result}`);    
         cell.style.fontSize = '11.9px';
+        cell.style.fontWeight = 'bold';
         cell.style.border = '1px solid black';
         
         row.appendChild(cell);
